@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="" href="style.css">
+    <title>Pixel Art Show</title>
+</head>
+
+<body>
+    <h1 class="pixel"> <em>Pixel Art Board</em></h1>
+    <h2 class="bdsi">Choose Grid Size</h2>
+    <form id="cgs">
+
+        <div class="navbar">
+            <button class="pointer">Reset</button>
+            <input type="color" value="#DDA82A" class="color">
+            <b>Grid Height:</b>
+            <input type="number" name="height" min="1" max="100" value="8" class="size">
+            <b>Grid Width:</b>
+            <input type="number" name="width" min="1" max="100" value="8" class="size">
+
+        </div>
+    </form>
+
+    <div class="container">
+        <div class="slate">
+            <slate id="slate"></slate>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
