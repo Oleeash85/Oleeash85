@@ -1,12 +1,13 @@
 * {
     font-family: 'Press Start 2P', cursive;
     ;
-    color: #daa520;
+    ;
+    color: whitesmoke;
     text-decoration-line: overline;
-    text-decoration-color: silver;
+    text-decoration-color: rgb(173, 70, 19);
     margin: 0;
     padding: 0;
-    background-color: #194B78;
+    background-color: rgb(146, 205, 205);
 }
 
 body {
@@ -14,7 +15,6 @@ body {
 }
 
 h1 {
-    font-family: Monoton;
     font-size: 70px;
     margin: 0.2em;
 }
