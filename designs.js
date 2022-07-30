@@ -1,28 +1,25 @@
 var Height, width, color;
 
-
-$('#sizePicker').submit(function(event) {
+$('#sizeSelector').submit(function(event) {
     event.preventDefault();
-    height = $('#inputHeight').val();
-    width = $('#inputWidth').val();
+    height = $('#gridHeight').val();
+    width = $('#gridWidth').val();
     makeGrid(height, width);
-    //console.log('Height:' + height + ' and width: ' + width);
+
 })
 
-
-
-function makeGrid(x, y) {
+function makeGrid(a, b) {
     $('tr').remove();
 
-    for (var i = 1; i <= x; i++) {
-        $('#pixelCanvas').append('<tr id=table' + i + '></tr');
-        for (var j = 1; j <= y; j++) {
-            $('#table' + i).append('<td></td>');
+    for (var c = 1; c <= a; c++) {
+        $('#pixelCanvas').append('<tr id=table' + c + '></tr');
+        for (var d = 1; d <= b; d++) {
+            $('#table' + c).append('<td></td>');
         }
 
     }
     $('td').click(function addcolor() {
-        color = $('#colorPicker').val();
+        color = $('#colorSelector').val();
 
         if ($(this).attr('style')) {
             $(this).removeAttr('style')
